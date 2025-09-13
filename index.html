@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>德州扑克结算校验器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🃏 德州扑克结算校验器</h1>
+            <p class="subtitle">牌局结束后的快速算账工具</p>
+        </header>
+
+        <main>
+            <!-- 校验状态栏 -->
+            <div id="verification-status" class="verification-status">
+                <div class="status-content">
+                    <span class="status-icon">⚪</span>
+                    <span class="status-text">请添加玩家并输入数据</span>
+                </div>
+            </div>
+
+            <!-- 玩家列表 -->
+            <div class="players-section">
+                <div class="section-header">
+                    <h2>玩家列表</h2>
+                    <button id="add-player-btn" class="btn btn-primary">
+                        <span class="btn-icon">➕</span>
+                        添加玩家
+                    </button>
+                </div>
+
+                <div id="players-list" class="players-list">
+                    <!-- 玩家行将通过JavaScript动态添加 -->
+                </div>
+
+                <div id="empty-state" class="empty-state">
+                    <div class="empty-icon">🎯</div>
+                    <p>还没有添加玩家</p>
+                    <p class="empty-hint">点击"添加玩家"开始记录</p>
+                </div>
+            </div>
+
+            <!-- 控制按钮 -->
+            <div class="controls">
+                <button id="clear-all-btn" class="btn btn-secondary">
+                    <span class="btn-icon">🗑️</span>
+                    清空重置
+                </button>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2025 德州扑克结算校验器 - 让算账变得简单</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
